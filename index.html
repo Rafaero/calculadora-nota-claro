@@ -25,50 +25,55 @@
 
     <img src="./assets/claro.png" class="rounded mx-auto d-block m-3" alt="..." width="200px">
 
-    <select required id="one" class="form-select m-1" aria-label="Default select example">
-      <option selected disabled>Qual a ferramenta que o relatório foi desenvolvido ?</option>
-      <option value=1.7>Tableau</option>
-      <option value=1.7>Power BI</option>
-      <option value=1.7>Salesforce</option>
-      <option value=1.7>OBIEE</option>
-      <option value=1.7>Qlikview</option>
-      <option value=1.7>IW Dashboard</option>
-      <option value=1.7>IW Report Server</option>
-      <option value=1.7>CSV / Txt</option>
-      <option value=-1.7>Excel</option>
-      <option value=0>Não se Aplica</option>
-
-    </select>
+      <select required id="one" class="form-select m-1" aria-label="Default select example">
+        <option selected disabled>Qual a ferramenta que o relatório foi desenvolvido ?</option>
+        <option value=1.7>Tableau</option>
+        <option value=1.7>Power BI</option>
+        <option value=1.7>Salesforce</option>
+        <option value=1.7>OBIEE</option>
+        <option value=1.7>Qlikview</option>
+        <option value=1.7>IW Dashboard</option>
+        <option value=1.7>IW Report Server</option>
+        <option value=1.7>CSV / Txt</option>
+        <option value=-1.7>Excel</option>
+        <option value=0>Não se Aplica</option>
+      </select>
+      <div id="oneAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 3,4 pontos altere a ferramenta utilizada</div>
 
     <select id="two" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>O Relatório está automatizado (Agendado)?</option>
       <option value=5>Sim</option>
       <option value=-10>Não ou Parcialmente</option>
     </select>
+    <div id="twoAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 15 pontos é necessário automatizar totalmente</div>
 
     <select id="three" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>Está cadastrado no portal IN ?</option>
       <option value=5>Sim</option>
       <option value=-10>Não</option>
     </select>
+    <div id="threeAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 15 pontos realize o cadastro no portal IN</div>
 
     <select id="four" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>Relatório possui glossário</option>
       <option value=0.3>Sim</option>
       <option value=0>Não</option>
     </select>
+    <div id="fourAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 0,3 é necessário possuir glossário</div>
 
     <select id="five" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>Relatório está dentro da identidade visual de IN ?</option>
       <option value=1.5>Sim</option>
       <option value=-1.5>Não</option>
     </select>
+    <div id="fiveAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 3,0 é preciso estar dentro da identidade visual</div>
 
     <select id="six" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>O Relatório utiliza DBLINK ?</option>
       <option value=0>Sim</option>
       <option value=0.5>Não</option>
     </select>
+    <div id="sixAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 0,5 não deve utilizar DBlink</div>
 
     <select id="seven" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>Qual o tipo de processo de carga criado / alterado ?</option>
@@ -87,24 +92,28 @@
       <option value=5>Outros</option>
       <option value=0>Não se aplica</option>
     </select>
+    <div id="sevenAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 15 pontos não utilize Access</div>
 
     <select id="eight" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>O processo está automatizado ?</option>
       <option value=4>Sim</option>
       <option value=-10>Não</option>
     </select>
+    <div id="eightAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 14 pontos o processo deve estar automatizado</div>
 
     <select id="nine" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>Utiliza SFTP ?</option>
       <option value=-10>Sim</option>
       <option value=4>Não</option>
     </select>
+    <div id="nineAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 14 pontos não deve utilizar SFTP</div>
 
     <select id="ten" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>O Relatório contém dados pessoais ?</option>
       <option value=-10>Sim</option>
       <option value=5>Não</option>
     </select>
+    <div id="tenAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 15 pontos o relatório não deve conter dados pessoais</div>
 
     <select id="eleven" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>Qual a ferramenta utilizada na preparação de dados ?</option>
@@ -115,6 +124,7 @@
       <option value=2.5>Hive</option>
       <option value=2.5>Alteryx</option>
     </select>
+    <div id="elevenAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 12,5 pontos não deve utilizar (Access/Qlikview/MySql)</div>
 
     <button type="button" onclick="calc()" class="btn btn-danger m-1">Calcular</button>
     <button type="button" onclick="window.location.reload()" class="btn btn-danger m-1"> Limpar </button>
@@ -126,12 +136,11 @@
       <li class="list-inline-item">
         <h1 id="show-porcent" class="display-3 m-3"></h1>
       </li>
-      <li id="qrcode" class="list-inline-item"><img src="./assets/qr-code.png" class="rounded mx-auto d-block m-1" alt="..." width="150px">
+      <li id="qrcode" class="list-inline-item"><img src="./assets/frame.png" class="rounded mx-auto d-block m-1"
+          alt="..." width="150px">
       </li>
     </ul>
-
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
