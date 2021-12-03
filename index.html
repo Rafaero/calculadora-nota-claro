@@ -23,7 +23,18 @@
 <body>
   <div class="container p-3" style="max-width: 700px">
 
-    <img src="./assets/claro.png" class="rounded mx-auto d-block m-3" alt="..." width="200px">
+    <img src="./assets/claro.png" class="rounded mx-auto d-block m-4" alt="..." width="200px">
+
+    <table class="table m-1" style="max-width: 300px; text-align: center;">
+      <thead class="table-dark">
+        <th>Nota Máxima</th>
+        <th>Nota Minima de Aprovação(70%)</th>
+      </thead>
+      <tbody>
+        <td>39,50</td>
+        <td>27,65</td>
+      </tbody>
+    </table>
 
       <select required id="one" class="form-select m-1" aria-label="Default select example">
         <option selected disabled>Qual a ferramenta que o relatório foi desenvolvido ?</option>
@@ -63,10 +74,10 @@
 
     <select id="five" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>Relatório está dentro da identidade visual de IN ?</option>
-      <option value=1.5>Sim</option>
-      <option value=-1.5>Não</option>
+      <option value=4>Sim</option>
+      <option value=-10>Não</option>
     </select>
-    <div id="fiveAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 3,0 é preciso estar dentro da identidade visual</div>
+    <div id="fiveAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 14 pontos é preciso estar dentro da identidade visual</div>
 
     <select id="six" class="form-select m-1" aria-label="Default select example">
       <option selected disabled>O Relatório utiliza DBLINK ?</option>
@@ -120,11 +131,11 @@
       <option value=-10>Access</option>
       <option value=-10>Qlikview</option>
       <option value=-10>MySql</option>
-      <option value=2.5>PL/SQL</option>
-      <option value=2.5>Hive</option>
-      <option value=2.5>Alteryx</option>
+      <option value=5>PL/SQL</option>
+      <option value=5>Hive</option>
+      <option value=5>Alteryx</option>
     </select>
-    <div id="elevenAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 12,5 pontos não deve utilizar (Access/Qlikview/MySql)</div>
+    <div id="elevenAlert" style="padding: 3px; padding-left: 6px; margin-bottom: 0; margin-left: 6px; display: none;" class="alert alert-danger" role="alert">Para aumentar a nota final em 15 pontos não deve utilizar (Access/Qlikview/MySql)</div>
 
     <button type="button" onclick="calc()" class="btn btn-danger m-1">Calcular</button>
     <button type="button" onclick="window.location.reload()" class="btn btn-danger m-1"> Limpar </button>

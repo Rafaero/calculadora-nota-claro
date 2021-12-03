@@ -12,7 +12,7 @@ function calc() {
     let questionTenNumber = parseFloat(document.getElementById("ten").value);
     let questionElevenNumber = parseFloat(document.getElementById("eleven").value);
 
-    let percent = ((questionOneNumber + questionTwoNumber + questionThreeNumber + questionFourNumber + questionFiveNumber + questionSixNumber + questionSevenNumber + questionEightNumber + questionNineNumber + questionTenNumber + questionElevenNumber) / 34.5) * 100;
+    let percent = ((questionOneNumber + questionTwoNumber + questionThreeNumber + questionFourNumber + questionFiveNumber + questionSixNumber + questionSevenNumber + questionEightNumber + questionNineNumber + questionTenNumber + questionElevenNumber) / 39.5) * 100;
     let resultPercent = (percent.toFixed(0) + " %")
 
     let sum = (questionOneNumber + questionTwoNumber + questionThreeNumber + questionFourNumber + questionFiveNumber + questionSixNumber + questionSevenNumber + questionEightNumber + questionNineNumber + questionTenNumber + questionElevenNumber);
@@ -30,12 +30,6 @@ function calc() {
 
     } else {
         alert("Preencha todos os campos")
-    }
-
-    if (sum < 24.15) {
-
-        alert("Porcetagem abaixo de 70%, reveja as respostas para aumentar sua nota.")
-
     }
 
     let oneAlert = document.getElementById('oneAlert');
