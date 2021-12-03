@@ -44,19 +44,19 @@ function calc() {
     let tenAlert = document.getElementById('tenAlert');
     let elevenAlert = document.getElementById('elevenAlert');
 
-    if (questionOneNumber <= 0) {
+    if (questionOneNumber < 0) {
         oneAlert.style.display = 'block';
     } else {
         oneAlert.style.display = 'none';
     }
 
-    if (questionTwoNumber <= 0) {
+    if (questionTwoNumber < 0) {
         twoAlert.style.display = 'block';
     } else {
         twoAlert.style.display = 'none';
     }
 
-    if (questionThreeNumber <= 0) {
+    if (questionThreeNumber < 0) {
         threeAlert.style.display = 'block';
     } else {
         threeAlert.style.display = 'none';
@@ -68,7 +68,7 @@ function calc() {
         fourAlert.style.display = 'none';
     }
 
-    if (questionFiveNumber <= 0) {
+    if (questionFiveNumber < 0) {
         fiveAlert.style.display = 'block';
     } else {
         fiveAlert.style.display = 'none';
@@ -80,31 +80,31 @@ function calc() {
         sixAlert.style.display = 'none';
     }
 
-    if (questionSevenNumber <= 0) {
+    if (questionSevenNumber < 0) {
         sevenAlert.style.display = 'block';
     } else {
         sevenAlert.style.display = 'none';
     }
 
-    if (questionEightNumber <= 0) {
+    if (questionEightNumber < 0) {
         eightAlert.style.display = 'block';
     } else {
         eightAlert.style.display = 'none';
     }
 
-    if (questionNineNumber <= 0) {
+    if (questionNineNumber < 0) {
         nineAlert.style.display = 'block';
     } else {
         nineAlert.style.display = 'none';
     }
 
-    if (questionTenNumber <= 0) {
+    if (questionTenNumber < 0) {
         tenAlert.style.display = 'block';
     } else {
         tenAlert.style.display = 'none';
     }
 
-    if (questionElevenNumber <= 0) {
+    if (questionElevenNumber < 0) {
         elevenAlert.style.display = 'block';
     } else {
         elevenAlert.style.display = 'none';
