@@ -31,6 +31,12 @@ function calc() {
     } else {
         alert("Preencha todos os campos")
     }
+    
+    if(percent >= 70){
+        document.getElementById('register').style.display = 'inline'
+    }else{
+        document.getElementById('register').style.display = 'none'
+    }
 
     let oneAlert = document.getElementById('oneAlert');
     let twoAlert = document.getElementById('twoAlert');
