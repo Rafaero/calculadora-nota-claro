@@ -28,17 +28,19 @@ function calc() {
     if (sum >= 0 || sum <= 0) {
         document.getElementById("show-sum").innerHTML = sum.toFixed(2);
 
+        if (percent >= 70) {
+            document.getElementById('register').style.display = 'inline'
+            alert('Seu relatório está pronto para ser registrado na avaliação oficial do IN Delivery, Clique no botão "Registrar"');
+        } else {
+            document.getElementById('register').style.display = 'none'
+            alert('Sua nota foi abaixo de 70%, revise as questões destacadas para aumentar sua nota final');
+            document.getElementById
+        }
+
     } else {
         alert("Preencha todos os campos")
     }
 
-    if(percent >= 70){
-        document.getElementById('register').style.display = 'inline'
-        alert('Seu relatório está pronto para ser registrado na avaliação oficial do IN Delivery, Clique no botão "Registrar"');
-    }else{
-        document.getElementById('register').style.display = 'none'
-        alert('Sua nota foi abaixo de 70%, revise as questões destacadas para aumentar sua nota final');
-    }
 
     let oneAlert = document.getElementById('oneAlert');
     let twoAlert = document.getElementById('twoAlert');
